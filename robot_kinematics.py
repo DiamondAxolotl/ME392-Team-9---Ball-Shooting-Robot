@@ -80,7 +80,7 @@ def main():
     drive_motors(0,0)
     print(lookup)
     
-    res = -(lookup, key=lookup.get)
+    res = -min(lookup, key=lookup.get)
     print(res)
     time.sleep(3)
     print("slept")
