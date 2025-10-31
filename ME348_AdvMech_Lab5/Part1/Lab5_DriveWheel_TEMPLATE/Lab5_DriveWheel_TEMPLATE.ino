@@ -82,21 +82,21 @@ void loop() {
 
      // HERE WILL DO PID AND CREATE NEW MOTOR COMMAND MAPPED TO -400-400 based on max. 
      // COMMENT THIS SECTION OUT TO FIND YOUR MOTORS MAX SPEEDS, 
-//     newVelRight = drivePIDR(velRight);
-//     newVelLeft = drivePIDL(velLeft);
+     newVelRight = drivePIDR(velRight);
+     newVelLeft = drivePIDL(velLeft);
 
       // Just some print statements to prove it works. You can comment this out.
-//      Serial.print("RIGHT: ");
-//      Serial.print(velRight);
-//      Serial.print(',');
-//      Serial.print(newVelRight);
-//      Serial.print("  ===  LEFT: ");
-//      Serial.print(velLeft);
-//      Serial.print(',');
-//      Serial.println(newVelLeft);
-        Serial.println(posRightCount);
-//      rightMotor = motorVelToSpeedCommand(newVelRight,rightMotorMax);
-//      leftMotor = motorVelToSpeedCommand(newVelLeft,leftMotorMax);
+      Serial.print("RIGHT: ");
+      Serial.print(velRight);
+      Serial.print(',');
+      Serial.print(newVelRight);
+      Serial.print("  ===  LEFT: ");
+      Serial.print(velLeft);
+      Serial.print(',');
+      Serial.println(newVelLeft);
+      Serial.println(posRightCount);
+      rightMotor = motorVelToSpeedCommand(newVelRight,rightMotorMax);
+      leftMotor = motorVelToSpeedCommand(newVelLeft,leftMotorMax);
       /// COMMENT OUT TO HERE FOR FINDING MAX MOTOR SPEED AT 400, You need to add the print statements to get the max speed. 
       
      
